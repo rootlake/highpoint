@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.map-container {
+    width: 350px;
+    height: 600px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Enable pinch-zoom on mobile devices */
+.map-image {
+    touch-action: pinch-zoom;
+    -webkit-user-select: none;
+    user-select: none;
+} 
