@@ -8,9 +8,21 @@ body {
     background-color: #f0f0f0;
 }
 
+.content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
 .map-container {
     width: 100%;
-    max-width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -18,12 +30,22 @@ body {
 .map-image {
     height: 875px;
     width: auto;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 600px) {
+    .content {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
     .map-image {
         height: auto;
-        width: 400px;
+        width: 100%;
     }
 }
 
@@ -32,5 +54,4 @@ body {
     touch-action: pinch-zoom;
     -webkit-user-select: none;
     user-select: none;
-} 
 } 
