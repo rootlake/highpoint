@@ -9,18 +9,22 @@ body {
 }
 
 .map-container {
-    width: 350px;
-    height: 600px;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .map-image {
-    width: 100%;
-    height: auto;
-    display: block;
+    height: 875px;
+    width: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .map-image {
+        height: auto;
+        width: 400px;
+    }
 }
 
 /* Enable pinch-zoom on mobile devices */
@@ -28,4 +32,5 @@ body {
     touch-action: pinch-zoom;
     -webkit-user-select: none;
     user-select: none;
+} 
 } 
